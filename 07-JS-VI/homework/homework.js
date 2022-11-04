@@ -63,7 +63,20 @@ function filter(array) {
   }
   return nuevoArray;
 }
+/*/var nuevoArray = [];
+//for (var primeraletra of array) {
+if (primeraletra[0] == "a") {
+  nuevoArray.push(primeraletra);
+}
+}
+return nuevoArray
 
+mejor metodo y mas corto es: 
+return array.filter(function (primeraletra) {
+  return primeraletra[0] == "a"
+});
+
+*/
 // No modificar nada debajo de esta línea
 // --------------------------------
 

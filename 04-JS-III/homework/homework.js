@@ -93,6 +93,10 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  var promedio = 0;
+  for(var i = 0; i < resultadosTest; i++) {
+    promedio = promedio + resultadosTest[i];
+  }
   return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
 
@@ -134,6 +138,8 @@ function cuentoElementos(arreglo){
     }
   }
   return contador
+  //arriba puede reemplazarce por
+  //contador = contador + 1
 }
 
 
