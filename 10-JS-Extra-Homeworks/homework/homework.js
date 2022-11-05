@@ -149,14 +149,26 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
   var nuevoarr = [];
-  for (let i = 0; i < arreglo1.length; i++) {
+  
+  for (const i in arreglo1) {
+    for (const j in arreglo2) {
+      if (arreglo1[i] === arreglo2[j]) {
+        nuevoarr.push(arreglo1[i]);
+      }
+    }
+  }
+  
+  /*for (let i = 0; i < arreglo1.length; i++) {
     for (let t = 0; t < arreglo2.length ; t++) {
       if (arreglo1[i] === arreglo2[t]) {
         nuevoarr.push(arreglo1[i]);
       }
     }
   }
+  */
   return nuevoarr;
+
+
 }
 
 let g = ([1, 2 , 3], [1, 5, 8 , 3])
